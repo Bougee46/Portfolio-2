@@ -1,0 +1,198 @@
+body {
+    font: 16px/1.5 "latto", sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #d3d3d3;
+}
+
+/*Global*/
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*Header*/
+
+header{
+    background-color: #35424a;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 11px;
+    min-height: 70px;
+    border-bottom: #2cf8f8 4px solid;
+}
+
+header a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px;
+}
+
+header h1{
+    float: right;
+    padding: 20px 15px;
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding h1{
+    margin: 0;
+}
+
+header nav{
+    float:right;
+    padding-top: 30px;
+}
+
+header .current a{
+    color: #2cf8f8;
+}
+
+header a:hover{
+    color: #2cf8f8;
+    font-weight: bold;
+}
+
+/*Showcase*/
+#showcase{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+}
+
+#showcase img{
+    border-radius: 555px;
+    height: 444px;
+    width: 444px;
+    grid-column: auto;
+}
+
+/*Contact*/
+
+section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: 400px;
+    align-items: center;
+}
+
+#contact-form {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#contact {
+    padding-bottom: 20px;
+}
+
+/*My Resume*/
+
+
+
+
+main > div {
+    background-color: #6c7378;
+}
+
+
+
+main > div:nth-child(odd){
+    background-color: #4a4f53;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 8px;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+/*About*/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.list {
+    grid-column: 2 / 2;
+    
+}
+
+
+
+section img {
+    height: 222px;
+    width: 222px;
+    border-radius: 55px;
+}
+
+.name {
+    position: relative;
+}
+
+.name-wrapper {
+   position: absolute;
+   top: 70%;
+   left: 10%;
+   z-index: 2;
+   color: #fff;
+}
+
+svg {
+    height: 222px;
+    width: 222px;
+    grid-column: 3 / 3;
+}
+
+/*animation*/
+
+
+
+/*Footer*/
+
+footer .container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+footer{
+    margin-top: 100px;
+    background-color: #35424a;
+    color: #fff;
+    border-top: #2cf8f8 4px solid;
+}
+
+footer a{
+    padding: 11px;
+}
+
+footer li {
+    display: inline;
+}
