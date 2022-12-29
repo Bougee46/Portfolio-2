@@ -1,8 +1,11 @@
 body {
-    font: 16px/1.5 "latto", sans-serif;
+    font: 1.5rem/1.5 "latto", sans-serif;
     padding: 0;
     margin: 0;
     background-color: #d3d3d3;
+    position: relative;
+    padding-bottom: 70px;
+    min-height: 100vh;
 }
 
 /*Global*/
@@ -99,12 +102,34 @@ section {
     padding-top: 30px;
     display: flex;
     flex-direction: column;
+    
 }
 
+.field {
+    width: 88%;
+    padding: 0.5rem 1rem;
+    background-color: rgba(230, 230, 230, 0.8);
+    margin-bottom: 1rem;
+    border-radius: 55px;
+    outline: none;
+    border: 2px solid;
+    font-size: 1.1rem;
+}
+
+.button {
+    align-items: center;
+    width: 100%;
+    background-color: #6c7378;
+    color: #fff;
+    padding: 11px;
+    font-size: 1.1rem;
+
+}
 
 
 #contact {
     padding-bottom: 20px;
+    
 }
 
 /*My Resume*/
@@ -140,16 +165,13 @@ h2 {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.list {
-    grid-column: 2 / 2;
-    
+div.name {
+    grid-column: 2 / 4;
 }
 
-
-
 section img {
-    height: 222px;
-    width: 222px;
+    height: 333px;
+    width: 333px;
     border-radius: 55px;
 }
 
@@ -164,15 +186,38 @@ section img {
    z-index: 2;
    color: #fff;
 }
+div.list {
+    margin-left: 44px ;
+}
 
 svg {
     height: 222px;
     width: 222px;
-    grid-column: 3 / 3;
+  
 }
 
 /*animation*/
+svg {
+    animation-name: student;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
 
+@keyframes student {
+    0% {
+      height: 222px;
+      width: 222px;
+    }
+    50% {
+      height: 242px;
+      width: 242px;
+    }
+    
+    100% {
+      height: 222px;
+      width: 222px;
+    }
+}
 
 
 /*Footer*/
@@ -187,6 +232,9 @@ footer{
     background-color: #35424a;
     color: #fff;
     border-top: #2cf8f8 4px solid;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 footer a{
@@ -195,4 +243,18 @@ footer a{
 
 footer li {
     display: inline;
+}
+
+@media (max-width: 610px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media (max-width: 350px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    
 }
